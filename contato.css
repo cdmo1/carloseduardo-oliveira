@@ -1,0 +1,73 @@
+button[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+label,
+input,
+textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+}
+
+#contato {
+    background-color: #e6e6e6;
+}
+.faq strong {
+    font-weight: bold;
+    color: #333;
+}
+.faq {
+    margin-top: 20px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faq h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.faq ul {
+    list-style: none;
+    padding: 0;
+}
+
+.faq li {
+    margin-bottom: 20px;
+}.redes-sociais {
+    margin-top: 20px;
+}
+
+.redes-sociais p {
+    margin-bottom: 10px;
+}
+
+.redes-sociais a {
+    display: inline-block;
+    margin-right: 20px;
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.redes-sociais a:hover {
+    color: #ff6600;
+}
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
