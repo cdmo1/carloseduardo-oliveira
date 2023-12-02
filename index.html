@@ -1,3 +1,20 @@
+<!-- Adição de JavaScript para Manipular Classes CSS:
+Função para Adicionar Classe CSS:
+
+Criei a função adicionarClasse(elementoId, classe) para adicionar uma classe CSS a um elemento HTML. Ela seleciona o elemento pelo ID e adiciona a classe especificada a ele.
+Função para Remover Classe CSS:
+
+A função removerClasse(elementoId, classe) foi criada para remover uma classe CSS de um elemento HTML. Assim como a função de adição, ela seleciona o elemento pelo ID e remove a classe especificada.
+Switch-Case para Decidir as Classes a Serem Adicionadas:
+
+Utilizei um switch-case baseado na hora atual para decidir se é manhã, tarde ou noite. Dependendo do horário, uma classe específica é adicionada ao elemento com ID 'contato'. Isso é feito usando as funções adicionarClasse().
+Exemplo de Do-While Loop:
+
+Incluí um exemplo de loop do-while que imprime algo no console (console.log), basicamente ele é um método log que está dentro do objeto console e então é utilizado para "debugs", nesse contexto não há utilidade visível serve APENAS para demonstrar o uso do loop requerido pelo professor João Paulo. Neste caso, ele conta de 0 a 4.
+Arquivo CSS para Estilizar as Classes Adicionadas:
+Estilos para Diferentes Momentos do Dia:
+No arquivo CSS, foram definidos estilos específicos para diferentes momentos do dia (classes 'manha', 'tarde' e 'noite').
+Utilizei seletores baseados nas classes adicionadas pelo JavaScript para aplicar estilos diferenciados ao elemento com ID 'contato' em diferentes horários. -->
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -11,6 +28,7 @@
     <header>
         <nav>
             <ul>
+                <!-- link para as páginas -->
                 <li><a href="index.html">Início</a></li>
                 <li><a href="portfolio.html">Portfólio</a></li>
                 <li><a href="sobre.html">Sobre Mim</a></li>
@@ -24,6 +42,7 @@
         <p>Bem-vindo ao meu portfólio fotográfico, onde capturo momentos especiais e transformo-os em imagens que contam histórias.</p>
         <p>Explore as cores, a beleza e a emoção da vida através das minhas lentes.</p>
     </section>
+    <!-- seção para o atual projeto em destaque e suas informações -->
     <section id="portfolio">
         <div class="projeto destaque">
             <h3>Projeto de Destaque</h3>
@@ -35,6 +54,7 @@
             <p>Tirada em: Mar 20, 2023 | Software: Luminar 4 | Visualizações: 846,4K</p>
         </div>
     </section>
+    <!-- seção para destacar as empresas notáveis que já trabalhou junto -->
     <section id="empresas" class="empresas-coluna">
         <h2>Empresas Com Quem Já Trabalhei</h2>
         <div class="grid">
@@ -55,6 +75,7 @@
             </div>
         </div>
     </section>
+    <!-- seção para depoimentos de clientes satisfeitos -->
     <section id="depoimentos">
         <h2>Depoimentos de Clientes</h2>
         <div class="depoimento">
