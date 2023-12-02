@@ -1,3 +1,4 @@
+/* estiliza o botão de envio do formulário */
 button[type="submit"] {
     background-color: #333;
     color: white;
@@ -6,6 +7,7 @@ button[type="submit"] {
     cursor: pointer;
 }
 
+/* estiliza os rótulos, campos de entrada e a área de texto no formulário */
 label,
 input,
 textarea {
@@ -13,6 +15,7 @@ textarea {
     margin-bottom: 10px;
 }
 
+/* define a largura e o preenchimento para os campos de entrada de texto e área de texto */
 input[type="text"],
 input[type="email"],
 textarea {
@@ -20,13 +23,17 @@ textarea {
     padding: 10px;
 }
 
+/* define a cor para essa seção */
 #contato {
     background-color: #e6e6e6;
 }
+
+/* estiliza a seção das perguntas frequentes */
 .faq strong {
     font-weight: bold;
     color: #333;
 }
+
 .faq {
     margin-top: 20px;
     background-color: #f2f2f2;
@@ -40,14 +47,19 @@ textarea {
     color: #333;
 }
 
+/*  remove os marcadores e o preenchimento padrão que as listas tem */
 .faq ul {
     list-style: none;
     padding: 0;
 }
 
+/* adiciona espaço entre cada item da lista */
 .faq li {
     margin-bottom: 20px;
-}.redes-sociais {
+}
+
+/* estiliza a seção de redes sociais */
+.redes-sociais {
     margin-top: 20px;
 }
 
@@ -55,6 +67,7 @@ textarea {
     margin-bottom: 10px;
 }
 
+/* estiliza os links de redes sociais */
 .redes-sociais a {
     display: inline-block;
     margin-right: 20px;
@@ -64,10 +77,28 @@ textarea {
     transition: color 0.3s;
 }
 
+/* altera a cor do texto dos links com o mouse sobre eles */
 .redes-sociais a:hover {
     color: #ff6600;
 }
+
+/* define o estilo do formulário com largura máxima e central */
 form {
     max-width: 400px;
     margin: 0 auto;
+}
+/* Estilos para diferentes momentos do dia */
+#contato.manha {
+    /* Estilos específicos para a manhã */
+    background-color: #ffd700; /* Exemplo de cor para a manhã */
+}
+
+#contato.tarde {
+    /* Estilos específicos para a tarde */
+    background-color: #ffa500; /* Exemplo de cor para a tarde */
+}
+
+#contato.noite {
+    /* Estilos específicos para a noite */
+    background-color: #483d8b; /* Exemplo de cor para a noite */
 }
