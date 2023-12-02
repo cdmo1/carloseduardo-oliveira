@@ -11,6 +11,7 @@
     <header>
         <nav>
             <ul>
+                <!-- link para as páginas -->
                 <li><a href="index.html">Início</a></li>
                 <li><a href="portfolio.html">Portfólio</a></li>
                 <li><a href="sobre.html">Sobre Mim</a></li>
@@ -20,6 +21,7 @@
         </nav>
     </header>
     <section id="contato">
+        <!-- form para contato -->
         <h2>Contato</h2>
         <form>
             <label for="nome">Nome:</label>
@@ -35,13 +37,50 @@
         </form>
 
         <div class="redes-sociais">
+            <!-- links para as redes sociais -->
             <p>Conecte-se comigo nas redes sociais:</p>
             <a href="https://www.linkedin.com/fotografo148" target="_blank">LinkedIn</a>
             <a href="https://www.instagram.com/fotografo148" target="_blank">Instagram</a>
             <a href="https://www.twitter.com/fotografo148" target="_blank">Twitter</a>
         </div>
-
+        <script>
+            // Função para adicionar uma classe CSS a um elemento
+            function adicionarClasse(elementoId, classe) {
+                let elemento = document.getElementById(elementoId);
+                elemento.classList.add(classe);
+            }
+        
+            // Função para remover uma classe CSS de um elemento
+            function removerClasse(elementoId, classe) {
+                let elemento = document.getElementById(elementoId);
+                elemento.classList.remove(classe);
+            }
+        
+            // Switch-case para decidir quando adicionar ou remover classes
+            let horaAtual = new Date().getHours();
+            let elementoContato = document.getElementById('contato');
+        
+            switch (true) {
+                case horaAtual < 12:
+                    adicionarClasse('contato', 'manha'); // Adiciona a classe 'manha' ao elemento com id 'contato'
+                    break;
+                case horaAtual >= 12 && horaAtual < 18:
+                    adicionarClasse('contato', 'tarde'); // Adiciona a classe 'tarde' ao elemento com id 'contato'
+                    break;
+                default:
+                    adicionarClasse('contato', 'noite'); // Adiciona a classe 'noite' ao elemento com id 'contato'
+                    break;
+            }
+        
+            // Exemplo de do-while loop para imprimir algo no console
+            let contador = 0;
+            do {
+                console.log('Contagem: ' + contador);
+                contador++;
+            } while (contador < 5);
+        </script>
         <div class="faq">
+            <!-- lista das perguntas frequentes -->
             <h3>Perguntas Frequentes</h3>
             <ul>
                 <li>
